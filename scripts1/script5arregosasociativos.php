@@ -4,5 +4,3 @@
 
 
 //cambia a posteriori el nombre del perro y muéstralo por pantalla 
-
-?>

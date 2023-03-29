@@ -1,5 +1,4 @@
 <?php
-// Crea una web y posteriormente define una constante con PI 
-//y calcula el área de un círculo a partir de un radio dado
+# Con las palabras reseservadas const y define podemos crear constantes
 
-?>
+// Crea un array que sea constante donde almacenemos los días de la semana

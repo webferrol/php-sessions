@@ -4,5 +4,3 @@
 
 
 //muestra con count() el número de amigos que tiene tu listado
-
-?>
