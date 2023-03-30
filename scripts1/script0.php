@@ -4,3 +4,5 @@
 # phpinfo() es un función que nos da información sobre nuestra instalación en php. Entre otras cosas la versión
 
 // Escribe en la línea inferior la instrucción phpinfo() y observa lo que sale en pantalla
+
+phpinfo();

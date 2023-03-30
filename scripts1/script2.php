@@ -17,9 +17,20 @@
 
 //declara dos variables de tipo texto con tu nombre y apellidos Concatena y observa el resultado por pantalla.
 
+$nombre = 'Xurxo';
+$apellidos = 'González Tenreiros';
+
+echo $nombre, ' ', $apellidos,'<br>';
+
+$edad;
 
 //crea una variable y no la incialices. 
 //Utiliza la función gettype() para ver el tipo de datos
+echo gettype($nombre),'<br>';
+echo gettype(true),'<br>';
+echo gettype($edad),'<br>';
+echo gettype($noexisto),'<br>';
+echo gettype([]),'<br>';
 
 
 
