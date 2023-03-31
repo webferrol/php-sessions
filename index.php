@@ -1,64 +1,26 @@
-<?php
-   extract($_GET); // $_GET['comentarios'] --> $comentarios
-  //  if (isset($comentarios)) {
-  //   echo htmlspecialchars($comentarios);
-  //  }
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inyección por formulario</title>
+  <title>Document</title>
 </head>
 <body>
-  <form action="<?=htmlspecialchars($_SERVER['PHP_SELF'])?>">
-    <textarea name="comentarios" cols="30" rows="10" placeholder="Sus comentarios aquí"><?=$comentarios??''?></textarea>
-    <br>
-    <fieldset>
-      <legend>Sexo</legend>
-      <label>Mujer 
-        <input 
-          
-        <?php 
-           if (!isset($sexo) || (isset($sexo) && $sexo==='m')) {
-            echo "checked";
-           }  
-           ?>
-           
-          type="radio" value="m" name="sexo"></label>
-      <label>Hombre 
-        
-      <input 
-      
-      <?php 
-           if (isset($sexo) && $sexo==='h') {
-            echo "checked";
-           }  
-           ?>
-      
-      type="radio" value="h" name="sexo"></label>
-    </fieldset>
+  <script>
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '8a9dd99e17msh046941ec72a61dep10f4d1jsn85e252bd2d50',
+		'X-RapidAPI-Host': 'countries-cities.p.rapidapi.com'
+	}
+};
 
-    <?php
-    $provincias = [
-      "C" => "A Coruña",
-      "L" => "Lugo",
-      "O" => "Ourense",
-      "P" => "PONTEVEDRA"
-    ]
-    ?>
+fetch('https://countries-cities.p.rapidapi.com/location/country/list', options)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
 
-    <select name="provincia">
-      <?php
-        foreach($provincias as $key => $value) {
-          $selected = (isset($provincia) && $key===$provincia) ? 'selected': '';
-          echo "<option $selected value='$key'>$value</option>";
-        }
-      ?>
-    </select>
-    <button>Enviar</button>
-  </form>
+  </script>
 </body>
 </html>
