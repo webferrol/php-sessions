@@ -41,11 +41,21 @@ if (isset($_POST['enviar'])) { // isset() es un función que comprueba si una va
   // Gestionamos formulario
 }
 ```
-## Evitar la inyección de código malicios
+## Convierte caracteres especiales en entidades HTML
 
 ```php
 $texto = '<script>alert("Toma virus")<script>'
 htmlspecialchars($texto);
+```
+
+## Atributo action del formulario. Forma correcta de poner la url
+
+```html
+<form action="<?=htmlspecialchars($_SERVER['PHP_SELF'])?>">
+  <textarea name="comentarios" cols="30" rows="10" placeholder="Sus comentarios aquí"><?=$comentarios??''?></textarea>
+  <br>
+  <button>Enviar</button>
+</form>
 ```
 
 ## Exensiones VSC
