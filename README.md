@@ -16,6 +16,17 @@ var_dump(true); // bool(true)
 gettype('Xurxo'); // string
 ```
 
+## Funciones de cadena
+
+```php
+# trim()  limpiamos los espacios en blanco por la izquierda y la derecha
+# strlen() longitud de un string
+# substr() extraemos texto
+# strtoupper() pasamos a mayúsculas
+# strtolower() pasamos a minúsculas
+# strpos() posición / índice de una parte de la cadena
+```
+
 ## Variables globales
 
 ### $_REQUEST, $_POST, $_GET
@@ -62,3 +73,8 @@ htmlspecialchars($texto);
 - PHP Server
 - PHP Intelephense
 - PHP Debug
+
+## Ejercicios
+
+- [Ejercicios básicos 1](https://github.com/webferrol/php-basic1-exercises)
+- [Ejercicios básicos 2](https://github.com/webferrol/php-basic2-exercises)
