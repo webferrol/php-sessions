@@ -69,6 +69,23 @@ htmlspecialchars($texto);
 </form>
 ```
 
+## Envíos de email
+
+[mail](https://www.php.net/manual/es/function.mail.php)
+
+```php
+<?php
+$para      = 'nobody@example.com';
+$titulo    = 'El título';
+$mensaje   = 'Hola';
+$cabeceras = 'From: webmaster@example.com' . "\r\n" .
+    'Reply-To: webmaster@example.com' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+mail($para, $titulo, $mensaje, $cabeceras);
+?>
+```
+
 ## Exensiones VSC
 - PHP Server
 - PHP Intelephense
@@ -78,3 +95,4 @@ htmlspecialchars($texto);
 
 - [Ejercicios básicos 1](https://github.com/webferrol/php-basic1-exercises)
 - [Ejercicios básicos 2](https://github.com/webferrol/php-basic2-exercises)
+- [POO](https://github.com/webferrol/php-basic-oop-exercises)
