@@ -102,6 +102,44 @@ mail($para, $titulo, $mensaje, $cabeceras);
 ?>
 ```
 
+## Clases
+
+Una __clase__ no es más que una _plantilla_ o un _abstracción de una entidad_ del mundo real que pretendemos modelizar.
+
+```php
+class Contador {
+  private int $cuenta = 0;
+  public int $intervalo = 1;
+
+  function __construct (int $number) {
+    $this->cuenta = (int) $number;
+  }
+}
+```
+En el ejemplo anterior hemos visto una clase llamada __Contador__ del que podemos obtener o __instanciar__ varios __objetos__ contadores.
+
+El __método contructor__ nos permite crear un __objeto__ con un estado inicial. En el ejemplo de abajo creamos dos contadores. Uno con la __propiedad__ $cuenta con valor 0 y el otro con 1.
+
+```php
+$contador1 = new Contador(0);
+$contador2 = new Contador(1);
+```
+
+Tanto las __propiedades__ (variables de una __clase__) como los __métodos__ (funciones de una clase) pueden ser públicos o privados.
+
+Una __propiedad o método público__ pueden ser accedidos desde fuera del objeto:
+
+```php
+echo $contador->intervalo;  // 1
+```
+
+En cambio una __propiedad o método privado__ sólo pueden ser accesibles desde el interior de la __clase__
+
+```php
+echo $contador->cuenta;  // Undefined property '$cuenta'.
+```
+
+
 ## Exensiones VSC
 - PHP Server
 - PHP Intelephense
