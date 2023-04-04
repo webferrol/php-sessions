@@ -59,7 +59,9 @@ $texto = '<script>alert("Toma virus")<script>'
 htmlspecialchars($texto);
 ```
 
-## Atributo action del formulario. Forma correcta de poner la url
+## Formularios
+
+### Atributo action del formulario. Forma correcta de poner la url
 
 ```html
 <form action="<?=htmlspecialchars($_SERVER['PHP_SELF'])?>">
@@ -67,6 +69,20 @@ htmlspecialchars($texto);
   <br>
   <button>Enviar</button>
 </form>
+```
+
+### Sanitizar controles de formularios para evitar injección de código malicioso por script
+
+- [Documentación oficial](https://www.php.net/manual/en/filter.filters.sanitize.php)
+
+```php
+<?php
+$number_string = '12.34';
+
+echo filter_var( $number_string, FILTER_SANITIZE_NUMBER_FLOAT ); // 1234
+
+echo filter_var( $number_string, FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION ); // 12.34
+?>
 ```
 
 ## Envíos de email
