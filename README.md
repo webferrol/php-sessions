@@ -150,3 +150,4 @@ echo $contador->cuenta;  // Undefined property '$cuenta'.
 - [Ejercicios básicos 1](https://github.com/webferrol/php-basic1-exercises)
 - [Ejercicios básicos 2](https://github.com/webferrol/php-basic2-exercises)
 - [POO](https://github.com/webferrol/php-basic-oop-exercises)
+- [POO - Ejercicio de refuerzo](./ejercicio-refuerzo-clases.pdf)
