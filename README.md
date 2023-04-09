@@ -139,6 +139,62 @@ En cambio una __propiedad o método privado__ sólo pueden ser accesibles desde 
 echo $contador->cuenta;  // Undefined property '$cuenta'.
 ```
 
+## Clases abstractas
+
+Una clase abstracta es el mayor rango de abstracción que se puede dar una clase. Esto es, sudodicha clase sólo puede ser utilizado como plantilla y nunca puede ser instanciado.
+
+```php
+<?php
+
+abstract class Persona {
+	public function saludo(){
+		return 'Hola!';
+	}
+}
+
+class Estudiante extends Persona {
+
+}
+
+$carlos = new Estudiante;
+echo $carlos->saludo();
+```
+
+## Variable global $_SESION
+
+[$_SESSION](https://www.php.net/manual/en/reserved.variables.session.php)
+Se trata de una __array asociativo__ que contiene variables de sesión del actual script. Es una variable __superglobal__ lo que quiere decir que su __scope__ es accesible desde cualquier parte del script.
+
+__Un sesión durá lo que esté abierto el navegador__
+
+```php
+<?php
+
+// Creating New Session
+session_start();
+
+/*Si tu no abres previamente la sesión la variable glogal $_Session no se podrá utilizar*/
+
+$_SESSION["xurxo"]='logged';
+
+?>
+
+```
+
+## Algunar variables globales interesantes
+
+```php
+<?php
+define('HOST', $_SERVER["HTTP_HOST"]);  //ej --> localhost
+define('RUTA_DOCUMENTO',$_SERVER['DOCUMENT_ROOT']) ;//C:/Users/xurxo/Desktop/CURSO_MF0492_3/php/PROYECTOS/CUSTOMER
+define('PROTOCOL',(stripos($_SERVER['SERVER_PROTOCOL'],'https') === 0) ? 'https://' : 'http://'); // ej --> http://
+define('PAGINA_ACTUAL', PROTOCOL.HOST.$_SERVER["PHP_SELF"]); //ejemplo --> http://localhost/contacto.php
+define('CSS',PROTOCOL.HOST.'/css/');
+define('JS',PROTOCOL.HOST.'/js/');
+define('PAGINA_PUBLICA',PROTOCOL.HOST);
+define('ENLACE_ACTUAL', PROTOCOL.HOST.$_SERVER["REQUEST_URI"]); //ejemplo --> http://localhost/contacto.php?nombre=Xurxo
+?>
+```
 
 ## Exensiones VSC
 - PHP Server
@@ -151,3 +207,17 @@ echo $contador->cuenta;  // Undefined property '$cuenta'.
 - [Ejercicios básicos 2](https://github.com/webferrol/php-basic2-exercises)
 - [POO](https://github.com/webferrol/php-basic-oop-exercises)
 - [POO - Ejercicio de refuerzo](https://github.com/webferrol/php-basico-clasess-ejercicio-refuerzo)
+
+## Ejercicio
+
+Crea una clase Persona con los siguientes atributos: nombre, apellidos y fecha de nacimiento que ha de ser de tipo DateTime.
+Esta clase ha de ser abstracta
+
+
+Crea su constructores, getters y setters.
+
+Crear las siguientes funciones:
+– mayorEdad: indica si es o no mayor de edad.
+– nombreCompleto: devuelve el nombre mas apellidos
+
+Crear otra clase llamada Alumno que herederá todo de la clase Persona.
