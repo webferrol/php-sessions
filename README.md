@@ -210,7 +210,7 @@ define('ENLACE_ACTUAL', PROTOCOL.HOST.$_SERVER["REQUEST_URI"]); //ejemplo --> ht
 
 ## Ejercicio
 
-Crea una clase Persona con los siguientes atributos: nombre, apellidos y fecha de nacimiento que ha de ser de tipo DateTime.
+Crea una clase Persona con los siguientes atributos privados o protegidos: nombre, apellidos y fecha de nacimiento que ha de ser de tipo DateTime.
 Esta clase ha de ser abstracta
 
 
