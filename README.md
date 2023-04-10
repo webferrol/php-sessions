@@ -205,19 +205,7 @@ define('ENLACE_ACTUAL', PROTOCOL.HOST.$_SERVER["REQUEST_URI"]); //ejemplo --> ht
 
 - [Ejercicios básicos 1](https://github.com/webferrol/php-basic1-exercises)
 - [Ejercicios básicos 2](https://github.com/webferrol/php-basic2-exercises)
-- [POO](https://github.com/webferrol/php-basic-oop-exercises)
-- [POO - Ejercicio de refuerzo](https://github.com/webferrol/php-basico-clasess-ejercicio-refuerzo)
+- [POO - Contador, Password](https://github.com/webferrol/php-basic-oop-exercises)
+- [POO - Cancion, CD](https://github.com/webferrol/php-basico-clasess-ejercicio-refuerzo)
 
-## Ejercicio
-
-Crea una clase Persona con los siguientes atributos privados o protegidos: nombre, apellidos y fecha de nacimiento que ha de ser de tipo DateTime.
-Esta clase ha de ser abstracta
-
-
-Crea su constructores, getters y setters.
-
-Crear las siguientes funciones:
-– mayorEdad: indica si es o no mayor de edad.
-– nombreCompleto: devuelve el nombre mas apellidos
-
-Crear otra clase llamada Alumno que herederá todo de la clase Persona.
+- [POO - Abstract, Static](https://github.com/webferrol/php-basic-poo-abstract-static)
