@@ -208,4 +208,4 @@ define('ENLACE_ACTUAL', PROTOCOL.HOST.$_SERVER["REQUEST_URI"]); //ejemplo --> ht
 - [POO - Contador, Password](https://github.com/webferrol/php-basic-oop-exercises)
 - [POO - Cancion, CD](https://github.com/webferrol/php-basico-clasess-ejercicio-refuerzo)
 - [POO - Abstract, Static](https://github.com/webferrol/php-basic-poo-abstract-static)
-- [POO - Refuerzo Clases: herenica, clases y métodos abstractos, static, datetime](https://github.com/webferrol/php-basic-products-abstract-static)
+- [POO - Refuerzo Clases: herencia, clases y métodos abstractos, static, datetime](https://github.com/webferrol/php-basic-products-abstract-static)
