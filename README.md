@@ -209,3 +209,15 @@ define('ENLACE_ACTUAL', PROTOCOL.HOST.$_SERVER["REQUEST_URI"]); //ejemplo --> ht
 - [POO - Cancion, CD](https://github.com/webferrol/php-basico-clasess-ejercicio-refuerzo)
 - [POO - Abstract, Static](https://github.com/webferrol/php-basic-poo-abstract-static)
 - [POO - Refuerzo Clases: herencia, clases y métodos abstractos, static, datetime](https://github.com/webferrol/php-basic-products-abstract-static)
+- Acceder a Wordpress con al API
+
+Suponiendo un fichero acceso.php en la ruta raíz de la instalación de wordpress
+
+```php
+<?php
+require_once('wp-config.php');
+require_once('wp-includes/user.php');
+$user = wp_authenticate_username_password(null, 'xurxo', 'Tq0xuxvBMs');
+// print_r($userData->user_pass);
+print_r($user);
+```
