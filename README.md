@@ -209,7 +209,11 @@ define('ENLACE_ACTUAL', PROTOCOL.HOST.$_SERVER["REQUEST_URI"]); //ejemplo --> ht
 - [POO - Cancion, CD](https://github.com/webferrol/php-basico-clasess-ejercicio-refuerzo)
 - [POO - Abstract, Static](https://github.com/webferrol/php-basic-poo-abstract-static)
 - [POO - Refuerzo Clases: herencia, clases y métodos abstractos, static, datetime](https://github.com/webferrol/php-basic-products-abstract-static)
-- Acceder a Wordpress con al API
+
+## Ejercicios adicionales
+1. [Cuestionario](https://incap.edu.co/blog/2021/10/08/reto-php-intermedio-s6/)
+
+## Wordpress con al API
 
 Suponiendo un fichero acceso.php en la ruta raíz de la instalación de wordpress
 
