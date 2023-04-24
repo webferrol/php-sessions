@@ -146,9 +146,10 @@ echo $contador->cuenta;  // Undefined property '$cuenta'.
 Decimos que el __encapsulamiento__ en la __programación orientada a objetos__ es cuando limitamos el acceso o damos un __acceso restringido de una propiedad__ a los elementos que necesita un miembro y no a ninguno más.
 
 Ejemplos:
-  -Clases
-  -Modificadores de acceso (public, private, protected)
-  -getters/setters
+
+- Clases
+- Modificadores de acceso (public, private, protected)
+- getters/setters
 
 ## Clases abstractas
 
