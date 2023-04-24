@@ -52,6 +52,7 @@ if (isset($_POST['enviar'])) { // isset() es un función que comprueba si una va
   // Gestionamos formulario
 }
 ```
+
 ## Convierte caracteres especiales en entidades HTML
 
 ```php
@@ -116,6 +117,7 @@ class Contador {
   }
 }
 ```
+
 En el ejemplo anterior hemos visto una clase llamada __Contador__ del que podemos obtener o __instanciar__ varios __objetos__ contadores.
 
 El __método contructor__ nos permite crear un __objeto__ con un estado inicial. En el ejemplo de abajo creamos dos contadores. Uno con la __propiedad__ $cuenta con valor 0 y el otro con 1.
@@ -139,17 +141,24 @@ En cambio una __propiedad o método privado__ sólo pueden ser accesibles desde 
 echo $contador->cuenta;  // Undefined property '$cuenta'.
 ```
 
+## Encapsulamiento
+
+Decimos que el __encapsulamiento__ en la __programación orientada a objetos__ es cuando limitamos el acceso o damos un __acceso restringido de una propiedad__ a los elementos que necesita un miembro y no a ninguno más.
+
+Ejemplos:
+  -Clases
+  -Modificadores de acceso (public, private, protected)
+  -getters/setters
+
 ## Clases abstractas
 
 Una clase abstracta es el mayor rango de abstracción que se puede dar una clase. Esto es, sudodicha clase sólo puede ser utilizado como plantilla y nunca puede ser instanciado.
 
 ```php
-<?php
-
 abstract class Persona {
-	public function saludo(){
-		return 'Hola!';
-	}
+  public function saludo(){
+    return 'Hola!';
+  }
 }
 
 class Estudiante extends Persona {
@@ -164,7 +173,6 @@ echo $carlos->saludo();
 
 [$_SESSION](https://www.php.net/manual/en/reserved.variables.session.php)
 Se trata de una __array asociativo__ que contiene variables de sesión del actual script. Es una variable __superglobal__ lo que quiere decir que su __scope__ es accesible desde cualquier parte del script.
-
 __Un sesión durá lo que esté abierto el navegador__
 
 ```php
@@ -197,6 +205,7 @@ define('ENLACE_ACTUAL', PROTOCOL.HOST.$_SERVER["REQUEST_URI"]); //ejemplo --> ht
 ```
 
 ## Exensiones VSC
+
 - PHP Server
 - PHP Intelephense
 - PHP Debug
@@ -211,6 +220,7 @@ define('ENLACE_ACTUAL', PROTOCOL.HOST.$_SERVER["REQUEST_URI"]); //ejemplo --> ht
 - [POO - Refuerzo Clases: herencia, clases y métodos abstractos, static, datetime](https://github.com/webferrol/php-basic-products-abstract-static)
 
 ## Ejercicios adicionales
+
 1. [Cuestionario](https://incap.edu.co/blog/2021/10/08/reto-php-intermedio-s6/)
 
 ## Wordpress con al API
