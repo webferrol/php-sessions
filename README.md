@@ -2,6 +2,75 @@
 
 [Enlace a classroom](https://classroom.google.com/c/NjAxMjMzOTMyNjQ1?cjc=satfahl)
 
+[Código del curso de PHP y MYSQL](./Codigo+del+Curso+de+PHP+y+MYSQL.zip)
+
+## Qué es PHP
+
+**Lenguaje** de **programación**, también llamado de script que se ejecuta del lado **servidor**
+
+### Lenguaje de script
+
+Documento de texto donde colocamos instrucciones u órdenes que luego serán ejecutadas por un dispositivo inteligente
+
+### Servidor
+
+Un **servidor** o **server**, en el lenguaje informático, **es un ordenador y sus programas**, que están **al servicio de otros ordenadores**.
+El servidor atiende y responde a las peticiones que le hacen los otros ordenadores. Los otros ordenadores, que le hacen peticiones, serán los **clientes** del servidor.
+
+## Tags
+
+```php
+<?php 
+  // Forma recomenda de 
+?>
+
+<? 
+  // Admitido desde PHP 7 siempre y cuando la directiva short_open_tag se encuentre en on (fichero php.ini)
+?>
+```
+
+Otras formas
+
+```php
+<script language = “php”>
+  // Tu código aquí
+</script>
+```
+
+```php
+<%
+  Tu código aquí
+%>
+```
+
+## Comentarios
+
+```php
+# Comentario  de una línea
+// Otra forma de comentar en una línea
+/*
+  Comentario 
+  en más de una línea
+*/
+```
+
+## Tipos de datos
+
+**PHP** igual que **JavaScript** es un lenguaje **débilmente** y **dinámicamente** tipado, por lo tanto no suele utilizar palabras reservadas para indicar el **tipo de dato**. 
+
+Esto no quiere decir que no existan los tipos de datos:
+
+- **String**: Cadena de texto
+- **Integer**: Numeros enteros
+- **Double**: Numeros con decimales
+- **Boolean**: Verdadero o Falso (true / false)
+- **Array**: Arreglo
+- **Object**: Objeto
+- **Class**: Clase
+- **Null**: Cuando a una variable aun no se le ha asignado ningun valor
+
+Para saber el *tipo de dato* disponemeso de una *función* gettype($variable)
+
 ## Saber características de PHP
 
 ```php
