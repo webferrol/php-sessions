@@ -69,7 +69,7 @@ Esto no quiere decir que no existan los tipos de datos:
 - **Class**: Clase
 - **Null**: Cuando a una variable aun no se le ha asignado ningun valor
 
-Para saber el *tipo de dato* disponemeso de una *función* gettype($variable)
+Para saber el *tipo de dato* disponemos de la *función* gettype($variable)
 
 ## Saber características de PHP
 
