@@ -88,6 +88,8 @@ gettype('Xurxo'); // string
 
 ## Arrays
 
+[Funciones de arrays](https://www.php.net/manual/es/ref.array.php)
+
 ```php
 $semana = array('Lunes','Martes','Miércoles','Jueves','Viernes','Sábado');
 
@@ -118,6 +120,8 @@ echo $Antonio; // 5
 __Arrays asociativos__ que permiten acceso a las __variables__ pasadas a través de un formulario dependiendo del método del envío
 
 ## Funciones de cadena
+
+- [Funciones de cadena php.net](https://www.php.net/manual/en/ref.strings.php)
 
 ```php
 # trim()  limpiamos los espacios en blanco por la izquierda y la derecha
