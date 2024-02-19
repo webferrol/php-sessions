@@ -2,7 +2,7 @@
 
 [Enlace a classroom](https://classroom.google.com/c/NjAxMjMzOTMyNjQ1?cjc=satfahl)
 
-[Código del curso de PHP y MYSQL](./Codigo+del+Curso+de+PHP+y+MYSQL.zip)
+[Código del curso de PHP y MYSQL](https://github.com/webferrol/php-course-code)
 
 ## Qué es PHP
 
@@ -54,6 +54,12 @@ Otras formas
 */
 ```
 
+## Saber características de PHP
+
+```php
+phpinfo()
+```
+
 ## Tipos de datos
 
 **PHP** igual que **JavaScript** es un lenguaje **débilmente** y **dinámicamente** tipado, por lo tanto no suele utilizar palabras reservadas para indicar el **tipo de dato**. 
@@ -71,11 +77,6 @@ Esto no quiere decir que no existan los tipos de datos:
 
 Para saber el *tipo de dato* disponemos de la *función* gettype($variable)
 
-## Saber características de PHP
-
-```php
-phpinfo()
-```
 
 ## Funciones de depuración
 
@@ -84,6 +85,37 @@ print_r(true); // 1
 var_dump(true); // bool(true)
 gettype('Xurxo'); // string
 ```
+
+## Arrays
+
+```php
+$semana = array('Lunes','Martes','Miércoles','Jueves','Viernes','Sábado');
+
+// Otra manera
+$diasSemana = ['Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'];
+
+// Array asociativo
+$notas = ['Antonio' => 5, 'Juanjo' => 8, 'Teresa' => 9];
+```
+
+### extract()
+
+(PHP 4, PHP 5, PHP 7, PHP 8). [php.net](https://www.php.net/manual/es/function.extract.php)
+
+**extract** — Importar variables a la tabla de símbolos actual desde un array
+
+```php
+$notas = ['Antonio' => 5, 'Juanjo' => 8, 'Teresa' => 9];
+extract($notas);
+
+echo $Antonio; // 5
+```
+
+## Variables globales
+
+### $_REQUEST, $_POST, $_GET
+
+__Arrays asociativos__ que permiten acceso a las __variables__ pasadas a través de un formulario dependiendo del método del envío
 
 ## Funciones de cadena
 
@@ -96,19 +128,13 @@ gettype('Xurxo'); // string
 # strpos() posición / índice de una parte de la cadena
 ```
 
-## Variables globales
-
-### $_REQUEST, $_POST, $_GET
-
-__Arrays asociativos__ que permiten acceso a las __variables__ pasadas a través de un formulario dependiendo del método del envío
-
 #### Operaciones
 
 - Comprobar si un formulario fue envíado
 
 ```php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  // Gestionamos formulario
+  // Gestionamos formulario con método POST
 }
 ```
 
@@ -123,6 +149,8 @@ if (isset($_POST['enviar'])) { // isset() es un función que comprueba si una va
 ```
 
 ## Convierte caracteres especiales en entidades HTML
+
+Expecialmente útil para evitar **inyección de código malicioso** en nuestras páginas.
 
 ```php
 $texto = '<script>alert("Toma virus")<script>'
