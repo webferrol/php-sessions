@@ -323,7 +323,7 @@ define('ENLACE_ACTUAL', PROTOCOL.HOST.$_SERVER["REQUEST_URI"]); //ejemplo --> ht
 
 ## Ejercicios adicionales
 
-1. [Cuestionario](https://incap.edu.co/blog/2021/10/08/reto-php-intermedio-s6/)
+1. [Formulario con variable global $_REQUEST](./form-exercise.md)
 
 ## Wordpress con al API
 
