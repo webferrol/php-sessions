@@ -7,7 +7,7 @@
 - **isset()**: Determina si una variable está definida y no es null
 - **$_REQUEST**, **$_POST**, **$_GET**: Un *array asociativo* de variables pasadas al script actual a través de los métodos **post** o **get** de los formularios
 - **$_SERVER**: Un array asociativo que contiene información del entorno del servidor y de ejecución. Por ejemplo el índice **PHP_SELF** retorna el nombre del archivo de script ejecutándose actualmente, relativa al directorio raíz de documentos del servidor. [Ver información de sus índices](https://www.php.net/manual/es/reserved.variables.server.php)
-- **htmlspecialchars**: Convierte caracteres especiales en [entidades HTML](https://developer.mozilla.org/es/docs/Glossary/Entity)
+- **htmlspecialchars()**: Convierte caracteres especiales en [entidades HTML](https://developer.mozilla.org/es/docs/Glossary/Entity)
 
 ## Rúbrica:
 
