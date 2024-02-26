@@ -20,7 +20,7 @@
    - El script PHP debe recolectar los datos del formulario utilizando `$_REQUEST`.
    - Se debe realizar alguna validación básica de los datos, como comprobar si los campos **nombre** o **correo electrónico** están vacíos.
 
-3. **Presentación de datos (30 puntos):**
+3. **Estructura de datos (30 puntos):**
    - Los datos ingresados por el usuario deben mostrarse claramente en la página después de enviar el formulario.
    - La presentación de los datos debe ser clara y legible.
 
