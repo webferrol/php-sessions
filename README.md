@@ -132,6 +132,13 @@ __Arrays asociativos__ que permiten acceso a las __variables__ pasadas a través
 # strpos() posición / índice de una parte de la cadena
 ```
 
+## Otras funciones
+
+```php
+ # empty() empty — Determina si una variable está vacía //https://www.php.net/manual/es/function.empty.php
+```
+
+
 #### Operaciones
 
 - Comprobar si un formulario fue envíado
