@@ -6,7 +6,7 @@
 
 ## Qué es PHP
 
-**Lenguaje** es un **lenguaje de programación**, también llamado de script que se ejecuta del lado **servidor**. Es el acrónimo de *Hypertext Pre-Processor*.
+**Lenguaje** es un **lenguaje de programación**, también llamado de script que se ejecuta del lado **servidor**. Es el acrónimo de *PHP: Hypertext Pre-Processor*.
 
 ### Qué es un lenguaje de script
 
