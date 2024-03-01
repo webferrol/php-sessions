@@ -100,7 +100,7 @@ $notas = ['Antonio' => 5, 'Juanjo' => 8, 'Teresa' => 9];
 
 ### Funciones de arrays o arreglos
 
-- [Funciones de arrays](https://www.php.net/manual/es/ref.array.php)
+- [Funciones de arrays](https://www.php.net/manual/es/ref.array.php).
 
 #### extract()
 
@@ -115,9 +115,24 @@ extract($notas);
 echo $Antonio; // 5
 ```
 
+#### count()
+
+ Cuenta todos los elementos de un array o algo de un objeto.
+
+```php
+const OPCIONES_6 = [
+    'Selecciona una opción',
+    'Desarrollo de Aplicaciones Web',
+    'Análisis de datos',
+    'Intelegenica artificial',
+    'Otro'
+];
+echo "Hay " . count(OPCIONES_6) . "opciones.";
+```
+
 #### array_search()
 
- Busca un valor determinado en un array y devuelve la primera clave correspondiente en caso de éxito ([php.net](https://www.php.net/manual/es/function.array-search.php))
+ Busca un valor determinado en un array y devuelve la primera clave correspondiente en caso de éxito ([php.net](https://www.php.net/manual/es/function.array-search.php)).
 
 ```php
 const OPCIONES_6 = [
