@@ -88,8 +88,6 @@ gettype('Xurxo'); // string
 
 ## Arrays
 
-[Funciones de arrays](https://www.php.net/manual/es/ref.array.php)
-
 ```php
 $semana = array('Lunes','Martes','Miércoles','Jueves','Viernes','Sábado');
 
@@ -100,7 +98,11 @@ $diasSemana = ['Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'];
 $notas = ['Antonio' => 5, 'Juanjo' => 8, 'Teresa' => 9];
 ```
 
-### extract()
+### Funciones de arrays o arreglos
+
+- [Funciones de arrays](https://www.php.net/manual/es/ref.array.php)
+
+#### extract()
 
 (PHP 4, PHP 5, PHP 7, PHP 8). [php.net](https://www.php.net/manual/es/function.extract.php)
 
@@ -111,6 +113,24 @@ $notas = ['Antonio' => 5, 'Juanjo' => 8, 'Teresa' => 9];
 extract($notas);
 
 echo $Antonio; // 5
+```
+
+#### array_search()
+
+ Busca un valor determinado en un array y devuelve la primera clave correspondiente en caso de éxito ([php.net](https://www.php.net/manual/es/function.array-search.php))
+
+```php
+const OPCIONES_6 = [
+    '' => 'Selecciona una opción',
+    'daw' => 'Desarrollo de Aplicaciones Web',
+    'ad' => 'Análisis de datos',
+    'ia' => 'Intelegenica artificial',
+    'otro' => 'Otro'
+];
+foreach(OPCIONES_8 as $value) {               
+  $checked = (isset($_REQUEST['pregunta8']) && array_search($value, $_REQUEST['pregunta8']) !== false)  ? 'checked' : '';
+  echo "<input $checked type=\"checkbox\" name=\"pregunta8[]\" value=\"$value\">$value<br>";
+}
 ```
 
 ## Variables globales
