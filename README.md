@@ -166,6 +166,24 @@ Algunos índices interesantes:
 
 Para ver más índices [ver la documentación en php.net](https://www.php.net/manual/es/reserved.variables.session.php).
 
+### $_SESION
+
+[$_SESSION](https://www.php.net/manual/en/reserved.variables.session.php)
+Se trata de una __array asociativo__ que contiene variables de sesión del actual script. Es una variable __superglobal__ lo que quiere decir que su __scope__ es accesible desde cualquier parte del script.
+__Un sesión durá lo que esté abierto el navegador__
+
+```php
+<?php
+
+// Creating New Session
+session_start();
+
+/*Si tu no abres previamente la sesión la variable glogal $_Session no se podrá utilizar*/
+
+$_SESSION["xurxo"]='logged';
+
+?>
+```
 
 ## Funciones de cadena
 
@@ -326,27 +344,7 @@ $carlos = new Estudiante;
 echo $carlos->saludo();
 ```
 
-## Variable global $_SESION
-
-[$_SESSION](https://www.php.net/manual/en/reserved.variables.session.php)
-Se trata de una __array asociativo__ que contiene variables de sesión del actual script. Es una variable __superglobal__ lo que quiere decir que su __scope__ es accesible desde cualquier parte del script.
-__Un sesión durá lo que esté abierto el navegador__
-
-```php
-<?php
-
-// Creating New Session
-session_start();
-
-/*Si tu no abres previamente la sesión la variable glogal $_Session no se podrá utilizar*/
-
-$_SESSION["xurxo"]='logged';
-
-?>
-
-```
-
-## Algunar variables globales interesantes
+## Configuración de algunas variables globales interesantes
 
 ```php
 <?php
