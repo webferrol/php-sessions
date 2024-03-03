@@ -154,6 +154,19 @@ foreach(OPCIONES_8 as $value) {
 
 __Arrays asociativos__ que permiten acceso a las __variables__ pasadas a través de un formulario dependiendo del método del envío
 
+### $_SESSION
+
+Es un __arreglo asociativo__  qe contiene información del entorno del servidor y de ejecución.
+
+Algunos índices interesantes:
+
+- 'PHP_SELF': El nombre del archivo de script ejecutándose actualmente.
+- 'SERVER_NAME': El nombre del host del servidor donde se está ejecutando actualmente el script.
+- 'REQUEST_METHOD': Método de petición empleado para acceder a la página, por ejemplo 'GET', 'HEAD', 'POST', 'PUT'.
+
+Para ver más índices [ver la documentación en php.net](https://www.php.net/manual/es/reserved.variables.session.php).
+
+
 ## Funciones de cadena
 
 - [Funciones de cadena php.net](https://www.php.net/manual/en/ref.strings.php)
