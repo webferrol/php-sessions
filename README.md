@@ -130,6 +130,27 @@ const OPCIONES_6 = [
 echo "Hay " . count(OPCIONES_6) . "opciones.";
 ```
 
+
+#### array_push()
+
+**array_push()** trata array como si fuera una *pila* y coloca la variable que se le proporciona al final del array. El tamaño del array será incrementado por el número de variables insertados. Tiene el mismo efecto que:
+
+```php
+<?php
+$array[] = $var;
+?>
+```
+
+Ejemplo:
+
+```php
+<?php
+$pila = array("naranja", "plátano");
+array_push($pila, "manzana", "arándano");
+print_r($pila);
+?>
+```
+
 #### array_search()
 
  Busca un valor determinado en un array y devuelve la primera clave correspondiente en caso de éxito ([php.net](https://www.php.net/manual/es/function.array-search.php)).
