@@ -300,6 +300,8 @@ mail($para, $titulo, $mensaje, $cabeceras);
 
 ## Clases
 
+Enlace a [classroom en Programación. Tema POO](https://classroom.google.com/c/NTg1NzY1NzA3NjIw?cjc=mnyl26c)
+
 Una __clase__ no es más que una _plantilla_ o un _abstracción de una entidad_ del mundo real que pretendemos modelizar.
 
 ```php
