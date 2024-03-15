@@ -60,9 +60,15 @@ Otras formas
 phpinfo()
 ```
 
-## Tipos de datos
+## Variables, constantes y tipos de datos
 
-**PHP** igual que **JavaScript** es un lenguaje **débilmente** y **dinámicamente** tipado, por lo tanto no suele utilizar palabras reservadas para indicar el **tipo de dato**. 
+### Escalares
+
+Un **escalar** es una *constante* o *variable* que contiene un **dato atómico** y **unidimensional**. En contraposición al concepto de escalar, están los conceptos de *array (vector)*, *lista y objeto*, que pueden tener almacenado en su estructura más de un valor.
+
+### Tipos de datos
+
+**PHP** igual que **JavaScript** es un lenguaje **débilmente** y **dinámicamente** tipado, por lo tanto no suele utilizar palabras reservadas para indicar el **tipo de dato**.
 
 Esto no quiere decir que no existan los tipos de datos:
 
@@ -75,7 +81,7 @@ Esto no quiere decir que no existan los tipos de datos:
 - **Class**: Clase
 - **Null**: Cuando a una variable aun no se le ha asignado ningun valor
 
-Para saber el *tipo de dato* disponemos de la *función* gettype($variable)
+Para saber el *tipo de dato* disponemos de la *función* <code>gettype($variable)</code>
 
 
 ## Funciones de depuración
