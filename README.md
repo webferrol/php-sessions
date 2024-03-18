@@ -181,7 +181,7 @@ foreach(OPCIONES_8 as $value) {
 
 __Arrays asociativos__ que permiten acceso a las __variables__ pasadas a través de un formulario dependiendo del método del envío
 
-### $_SESSION
+### $_SERVER
 
 Es un __arreglo asociativo__  qe contiene información del entorno del servidor y de ejecución.
 
